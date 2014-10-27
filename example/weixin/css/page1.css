@@ -1,0 +1,78 @@
+*{margin:0;padding:0;}
+body{color:#333;font-size:12px;font-family:"宋体";background:#f2f2f2;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+
+
+
+
+.wrapper {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.contain{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.header{
+	height: 40px;
+	background-color:#00a0f8;
+}
+.header h1{
+	color: #fff;
+	font-size: 20px;
+	line-height: 40px;
+	text-indent: 25px;
+}
+
+.detail{
+	border-top: 1px #ddd solid;
+	border-bottom: 1px #ddd solid;
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	color: #666;
+}
+.count{
+	height: 60px;
+	margin-left: 25px;
+	margin-right: 25px;
+	border-bottom: 1px #ddd solid;
+	overflow: hidden;
+}
+
+.income{
+	margin-left: 25px;
+	margin-right:25px;
+	height: 80px;
+}
+
+.arrow{
+	position: absolute;
+	right: 10px;
+	top: 93px;
+	font-size: 15px;
+	color: #939393;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+

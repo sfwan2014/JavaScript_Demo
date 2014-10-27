@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+		<style type="text/css">
+			#red {color:red;}
+			#green {color:green;}
+			
+			#sidebar p {
+				font-style: italic;
+				text-align: right;
+				margin-top: 0.5em;
+			}
+			
+			#sidebar h2 {
+				font-size:1em;
+				font-weight:normal;
+				font-style:italic;
+				margin:0;
+				line-height:1.5px;
+				text-align:right;
+			}
+			
+			/*#sidebar {
+				border:1px dotted #000;
+				padding:10px;
+			}*/
+			div#sidebar {
+				border:1px dotted #ff0000;
+				padding:10px;
+			}
+		</style>
+	</head>
+	<body>
+	<p id="red">这个段落是红色</p>
+	<p id="green">这个段落是绿色</p>
+	<div id="sidebar">
+		<h2>即使被标注为 sidebar 的元素只能在文档中出现一次，这个 id 选择器作为派生选择器也可以被使用很多次</h2>
+		<br />
+		<br />
+		
+		<p>该样式只会应用于出现在 id 是 sidebar 的元素内的段落。</p>
+	</div>
+	</body>
+</html>

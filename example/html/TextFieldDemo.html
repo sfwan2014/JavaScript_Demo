@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+	</head>
+	<body>
+	<h3 align="center">HTML 表单和输入</h3>
+	<br />
+	<br />
+	<h4>文本域</h4>
+	<form> 
+	名:
+		<input type="text" name="firstname"/>
+		<br />
+	姓:
+		<input type="text" name="lastname"/>
+	</form>
+	<br /> 
+	<br />
+	
+	<h4>密码域</h4>
+	<form>
+		用户:
+		<input type="text" name="user" />
+		<br />
+		密码:
+		<input type="password" name="password" />
+	</form>
+	<p>请注意，当您在密码域中键入字符时，浏览器将使用项目符号来代替这些字符。</p>
+	
+	<br />
+	<br />
+	<h4>表单</h4>
+	<table border="0" bgcolor="#99dddd" width="300">
+		<tr>
+			<td>
+				&lt;form&gt;
+				<br />
+				. . .
+				<br />
+				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input 元素
+				<br />
+				&lt;/form&gt;
+			</td>
+		</tr>
+	</table>
+	<br />
+	<br />
+	
+	<h4>单选按钮</h4>
+	
+	<form>
+	<input type="radio" name="sex" value="male" />Male
+	<br />
+	<input type="radio" name="sex" value="female" />Female
+	</form>
+	<br />
+	<br />
+	
+	<h4>复选框</h4>
+	<form>
+	<input type="checkbox" name="bike" />
+	i have a bike
+	<br />
+	<input type="checkbox" name="car" />
+	i have a car
+	</form>
+	<br />
+	<br />
+	
+	<h4>表单的动作属性(Action) 和确认按钮</h4>
+	<form name="input" action="http://www.baidu.com/" method="get">
+	Username:
+	<input type="text" name="user" />
+	<input type="submit" value="Submit" />
+	<p>假如您在上面的文本框内键入几个字母，然后点击确认按钮，那么输入数据会传送到 "www.baidu.com" 的页面。该页面将显示出输入的结果。</p>
+	</form>
+	<br />
+	<br />
+	
+	<h4>简单的下拉列表</h4>
+	<form>
+		<select name="Cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audio">Audio</option>
+		</select>
+	</form>
+	<br />
+	<br />
+	
+	<h4>带默认选择的下拉列表</h4>
+	<form>
+		<select name="Cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat" selected="selected">Fiat</option>
+			<option value="audio">Audio</option>
+		</select>
+	</form>
+	<br />
+	<br />
+	
+	<h4>文本域</h4>
+	<p>
+	This example cannot be edited because our editor uses a textarea for input, and your browser does not allow a textarea inside a textarea.
+	</p>
+	<textarea rows="10" cols="30">
+	The cat was playing in the garden
+	</textarea>
+	<br />
+	<br />
+	
+	<h4>创建按钮</h4>
+	<form>
+	<input type="button" value="Hello world" />
+	</form>
+	<br />
+	<br />
+	
+	<h4>Fieldset around data</h4>
+	<form> 
+		<fieldset>
+			<legend>健康信息</legend>
+			身高:<input type="text" />
+			体重:<input type="text" />
+		</fieldset>
+	</form>
+	<br />
+	<br />
+	
+	<h4>带有输入框和确认按钮的表单</h4>
+	<form action="submit.html" method="get">
+		<p>First name: <input type="text" name="fname" /></p>
+		<p>Last name: <input type="text" name="lname" /></p>
+		<input type="submit" value="确定" />
+	</form>
+	
+	<p>请单击确认按钮，输入会发送到服务器上名为 "submit.html" 的页面。</p>
+	</body>
+</html>

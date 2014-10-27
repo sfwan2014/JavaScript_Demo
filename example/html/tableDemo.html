@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ </head>
+	<body>
+	<!-- 表格 -->
+	<table border="1">
+	<tr>
+	<th>Heading</th>
+	<th>Another Heading</th>
+	</tr>
+	<tr>
+	<td>row 1, cell 1</td>
+	<td>row 1, cell 2</td>
+	</tr>
+	<tr>
+	<!-- <td>row 2, cell 1</td>-->
+	<td>row 2, cell 2</td>
+	<td>&nbsp</td>
+	</tr>
+	</table>
+	
+	<h4>表头</h4>
+	<table border="1">
+	<tr>
+		<th>姓名</th>
+		<th>电话</th>
+		<th>电话</th>
+	</tr>
+	<tr>
+		<td>Bill Gates</td>
+		<td>555 77 854</td>
+		<td>555 77 853</td>
+	</tr>
+	</table>
+	
+	<h4>垂直的表头</h4>
+	<table border = "1">
+	<tr>
+		<th>姓名</th>
+		<td>Bill Gates</td>
+	</tr>
+	<tr>
+		<th>电话</th>
+		<td>555 77 854</td>
+	</tr>
+	<tr>
+		<th>电话</th>
+		<td>555 77 853</td>
+	</tr>
+	</table>
+	
+	<h4>这个表格有一个标题,以及粗边框</h4>
+	<table border="6">
+	<caption>我的标题</caption>
+	<tr>
+		<td>100</td>
+		<td>200</td>
+		<td>300</td>
+	</tr>
+	<tr>
+		<td>400</td>
+		<td>500</td>
+		<td>600</td>
+	</tr>
+	</table>
+	
+	<h4>横跨两列的单元格:</h4>
+	<table border="1">
+	<tr>
+		<th>姓名</th>
+		<th colspan="2">电话</th>
+	</tr>
+	<tr>
+		<td>Bill Gates</td>
+		<td>555 77 865</td>
+		<td>555 77 864</td>
+	</tr>
+	</table>
+	
+	<h4>横跨两行的单元格</h4>
+	<table border="1">
+	<tr>
+		<th>姓名</th>
+		<td>Bill Gates</td>
+	</tr>
+	<tr>
+		<th rowspan="2">电话</th>
+		<td>555 77 876</td>
+	</tr>
+	<tr>
+		<td>555 77 877</td>
+	</tr>
+	</table>
+	
+	<h4>表格内的标签</h4>
+	<table border="1">
+	<tr>
+		<td>
+			<p>这是一个段落</p>
+			<p>这是另一个段落</p>
+		</td>
+		<td>这个单元格包含一个表格:
+			<table border="1">
+			<tr>
+				<td>A</td>
+				<td>B</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>D</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>这个单元格包含一个列表:
+			<ul>
+				<li>苹果</li>
+				<li>香蕉</li>
+				<li>菠萝</li>
+			</ul>
+		</td>
+		<td>HELLO</td>
+	</tr>
+	</table>
+	
+	<br />
+	<br />
+	
+	<h4>单元格边距</h4>
+	<h4>没有 cellpadding:</h4>
+	<table border="1">
+	<tr>
+		<td>First</td>
+		<td>Row</td>
+	</tr>
+	<tr>
+		<td>Second</td>
+		<td>Row</td>
+	</tr>
+	</table>
+	
+	<h4>带有 cellpadding:</h4>
+	<table border="1" cellpadding="10">
+	<tr>
+		<td>First</td>
+		<td>Row</td>
+	</tr>
+	<tr>
+		<td>Second</td>
+		<td>Row</td>
+	</tr>
+	</table>
+	<br />
+	<br />
+	<h3>单元格间距</h3>
+	<h4>没有 cellspacing:</h4>
+	<table border="1">
+	<tr>
+		<td>First</td>
+		<td>Row</td>
+	</tr>
+	<tr>
+		<td>Second</td>
+		<td>Row</td>
+	</tr>
+	</table>
+	
+	<h4>带有cellspacing:<h4>
+	<table border="1" cellspacing="10">
+	<tr>
+		<td>First</td>
+		<td>Row</td>
+	</tr>
+	<tr>
+		<td>Second</td>
+		<td>Row</td>
+	</tr>
+	</table>
+	
+	<br />
+	<br />
+	
+	<h3>表格背景颜色,图片</h3>
+	<h4>背景颜色</h4>
+	<table border="1" bgcolor="red">
+	<tr>
+		<td>First</td>
+		<td>Row</td>
+	</tr>
+	<tr>
+		<td>Second</td>
+		<td>Row</td>
+	</tr>
+	</table>
+	
+	<h4>背景图像</h4>
+	<table border="1" background="./test.png">
+	<tr>
+		<td>First</td><td>Row</td>
+	</tr>
+	<tr>
+		<td>Second</td><td>Row</td>
+	</tr>
+	</table>
+	
+	<br />
+	<br />
+	<h3>单元格背景颜色,图像</h3>
+	<h4>单元背景</h4>
+	<table border="1" cellspacing="10">
+	<tr>
+		<td bgcolor="red">First</td>
+		<td bgcolor="#888777">Row</td>
+	</tr>
+	<tr>
+		<td background="./test.png">Second</td>
+		<td>Row</td>
+	</tr>
+	</table>
+	
+	<br />
+	<br />
+	<h3>在表格单元中排列内容</h3>
+	<table width="400" border="1">
+	<tr>
+		<th align="left">消费项目...</th>
+		<th align="right">一月</th>
+		<th align="right">二月</th>
+	</tr>
+	<tr>
+		<td align="left">化妆品</td>
+		<td align="right">$30.00</td>
+		<td align="right">$44.45</td>
+	</tr>
+	<tr>
+		<td align="left">衣服</td>
+		<td align="right">$241.10</td>
+		<td align="right">$50.20</td>
+	</tr>
+	<tr>
+		<td align="left">食物</td>
+		<td align="right">$730.00</td>
+		<td align="right">$650.43</td>
+	</tr>
+	<tr>
+		<td align="left">总计</td>
+		<td align="right">$1001.51</td>
+		<td align="right">$744.67</td>
+	</tr>
+	</table>
+	<br />
+	<br />
+	<h3>框架(frame)属性</h3>
+	<p>
+		<b>注释:</b>frame属性无法在Internet Explorer中正确的显示.
+	</p>
+	<p>Table with fram="box":</p>
+	<table frame="box">
+	<tr>
+		<th>Month</th>
+		<th>Saving</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	</table>
+	
+	<p>Table with frame="above":</p>
+	<table frame="above">
+	<tr>
+		<th>Month</th>
+		<th>Saving</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	</table>
+	
+	<p>Table with frame="below":</p>
+	<table frame="below">
+	<tr>
+		<th>Month</th>
+		<th>Saving</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	</table>
+	
+	<p>Table with frame="hsides":</p>
+	<table frame="hsides">
+	<tr>
+		<th>Month</th>
+		<th>Saving</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	</table>
+	
+	<p>Table with frame="vsides":</p>
+	<table frame="vsides">
+	<tr>
+		<th>Month</th>
+		<th>Saving</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	</table>
+	<br />
+	<br />
+	
+	<h3>表格标签</h3>
+	<table border="1" width="400">
+	<tr>
+		<th border="0" align="left" bgcolor="#d5d5d5">表格</th>
+		<th width="250" align="left" bgcolor="#d5d5d5">描述</th>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;table&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;caption&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格标题</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;th&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格的表头</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;tr&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格的行</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;td&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格单元</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;thead&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格的页眉</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;tbody&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格的主体</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;tfoot&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格的页脚</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;col&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格列的属性</td>
+	</tr>
+	<tr>
+		<td align="left" bgcolor="#efefef">&lt;colgroup&gt;</td>
+		<td align="left" bgcolor="#efefef">定义表格列的组</td>
+	</tr>
+	</table>
+	
+	</body>
+</html>

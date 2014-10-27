@@ -1,0 +1,48 @@
+* {margin:0;padding:0;}
+body{color:#333;font-size:12px;font-family:"宋体";background:#f9f9f0;}
+
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+#Page-article{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#form{
+	color: #fff;
+	background-color: #00a0f8;
+}
+
+#form input{
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+	border: 1px #c9ebff solid;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	background-color: #fff;
+}
+
+#form button{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	font-family: "宋体";
+	cursor: pointer;
+	background-color: #FEBF12;
+	border: 1px #c9ebff solid;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
