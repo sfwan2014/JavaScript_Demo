@@ -10,6 +10,14 @@ h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
 }
 
 
+#Page-article{
+	width: 100%;
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	nottom: 50px;
+	z-index: 1;
+}
 
 
 

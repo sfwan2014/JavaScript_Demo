@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<link href="demo.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="div1">
+			<p id="p1">Hello world!</p>
+			<button id="bt1" onclick="caculateLength()">计算长度</button>
+			<p id="p2">Hello world!</p>
+			<button id="bt2" onclick="toUpperCase()">转大写</button>
+		</div>
+		<script>
+			function caculateLength(){
+				var message=document.getElementById("p1").innerHTML;
+				var x=message.length;
+				
+				var para=document.createElement("p");
+				var node=document.createTextNode("hello world 字符长度为:"+x);
+				para.appendChild(node);
+				
+				var element=document.getElementById("p1");
+				element.appendChild(para);
+				document.getElementById("bt1").style.display="none";
+			}
+			
+			function toUpperCase(){
+				var p1=document.getElementById("p2");
+				var message=p1.innerHTML.toUpperCase();
+				
+				var para=document.createElement("p");
+				var node=document.createTextNode("Hello world 大写为:"+message);
+				para.appendChild(node);
+				 
+				var element=document.getElementById("p2");    
+				element.appendChild(para);
+				document.getElementById("bt2").style.display="none";
+			}
+			
+			function test(){
+				person=new Object();
+				person.firstname="Bill";
+				person.lastname="Gates";
+				person.age=56;
+				person.eyecolor="blue";
+				document.write(person.firstname+" is "+person.age+" years old.");
+			}
+			
+			function person(firstname,lastname,age,eyecolor){
+				this.firstname=firstname;
+				this.lastname=lastname;
+				this.age=age;
+				this.eyecolor=eyecolor;
+				
+				this.changeName=changeName;
+				function changeName(name){
+					this.lastname=name;
+				}
+			}
+			
+			function createPerson(){
+				var p=new person("Bill", "Gates", 56, "blue");
+				document.write(p.firstname + " is " + p.age + " years old.");
+				return p;
+			}
+			
+			
+			var p = createPerson();
+			p.changeName("Jobs")
+			document.write("<br />"+p.lastname + " is " + p.age + " years old.");
+			
+		</script>  
+	</body>
+</html>

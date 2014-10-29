@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<link href="demo.css" rel="stylesheet" />
+	</head>
+	<body>
+	
+	<div>
+ 		<p class="b">改变HTML输出流</p>
+		<p>javaScript 能够创建动态的 HTML 内容:</p>
+		<p>在 javaScript中, document.write()可用于直接向HTML输出流写内容.</p>
+	</div>
+	
+	<script>
+		for (var i=0; i< 2; i++) {
+			document.write("<div class=\"bg\">"+Date()+"</div>");
+		}
+	</script>
+
+	</body>
+</html>

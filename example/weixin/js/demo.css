@@ -1,0 +1,10 @@
+
+div{background-color:#fee; padding-left: 10px;}
+div.bg{background-color:#eee; padding-top:5px;padding-bottom: 5px;}
+p.b{font-size:24px; font-family:"宋体";}
+
+li {font-size: 12px; padding-left: 5px; style:circle;}
+
+div.green{padding-left:10px;}
+
+div.green h1{text-align:center; background-color: #2f2;width:30%; height:150px;color:#fff; font-size:20px;}
