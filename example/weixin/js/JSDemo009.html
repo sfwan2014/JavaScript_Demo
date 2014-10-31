@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<link href="demo.css" rel="stylesheet" />
+	</head>
+	<body onload="startTime()">
+	<div>
+		<p class="b">显示一个时钟</p>
+		<p id="p1"></p>
+		
+		下面的例子使用了 Math 对象的 floor() 方法和 random() 来返回一个介于 0 和 10 之间的随机数：
+document.write(Math.floor(Math.random()*11)) 
+		
+		<script type="text/javascript">
+			function startTime(){
+				var today=new Date();
+				var h=today.getHours();
+				var m=today.getMinutes()
+				var s=today.getSeconds();
+				m=checkTime(m);
+				s=checkTime(s);
+				document.getElementById("p1").innerHTML=h+":"+m+":"+s;
+				t=setTimeout('startTime()',1000);
+			}
+			
+			function checkTime(i){
+				if (i < 10){            
+					i="0"+i;
+				}
+				      
+				return i;
+			}
+			
+			var myDate=new Date();
+			myDate.setFullYear(2014,8,9);
+			var today=new Date();
+			
+			if (myDate>today){
+				alert("Today is before 9th August 2014");
+			} else {
+				alert("Today is after 9th August 2014");
+			}
+			
+		</script>
+		
+	</div>
+
+	</body>
+</html>

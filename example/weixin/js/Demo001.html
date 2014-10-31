@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="App">
+  <head>
+	<script src="angular.js"></script>
+    
+  </head>
+  <body>
+	<form ng-controller="Ctrl">
+		<input type="radio" ng-model="phone" name="phone" value="Moto">Moto
+		<input type="radio" ng-model="phone" name="phone" value="Miui">Miui<br>
+		<button ng-click="check('0')">选择1</button>  
+		<button ng-click="check('1')">选择2</button><br>
+		Value = {{phone || json}}
+	</form>
+  </body>
+  <script>
+  var appModule = angular.module('App', []);
+	appModule.controller('Ctrl', function($scope) {
+		$scope.phone = 'Moto';
+		$scope.check = function(number) {
+			if (number == 0) {
+				$scope.phone = 'Moto';
+			} else {
+				$scope.phone = 'Miui';
+			}
+		};
+	});
+  </script>
+</html>

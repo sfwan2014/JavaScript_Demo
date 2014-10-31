@@ -70,6 +70,14 @@
 			p.changeName("Jobs")
 			document.write("<br />"+p.lastname + " is " + p.age + " years old.");
 			
+			
+			var txt="";
+			for (x in p){
+				txt=txt+p[x]+"&nbsp;";
+			}
+			
+			document.write("<br />"+txt);
+			
 		</script>  
 	</body>
 </html>
